@@ -1,7 +1,14 @@
 .description {
-  width: 50%;
+  width: 38%;
+  //transform: translateX(-5rem);
+  margin-left: 12rem;
 }
 
+.description-photo-container {
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+}
 .section-about {
   margin-top: 11rem;
 }
