@@ -117,8 +117,7 @@ body {
   text-align: center; }
 
 .description {
-  width: 38%;
-  margin-left: 12rem; }
+  width: 48%; }
 
 .description-photo-container {
   display: flex;
@@ -126,7 +125,8 @@ body {
   background-color: lightblue; }
 
 .section-about {
-  margin-top: 11rem; }
+  margin-top: 11rem;
+  width: 85%; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -197,22 +197,30 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 80rem;
-  width: 80rem; }
+  height: 0;
+  width: 52%; }
   .composition__photo {
-    width: 40%;
+    width: 50%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    outline-offset: 2rem; }
     .composition__photo--1 {
-      top: -2rem;
-      left: 10rem; }
+      top: -5vh;
+      left: 10%; }
     .composition__photo--2 {
-      top: 10.5rem;
-      left: 20rem; }
+      top: 15vh;
+      left: 32%; }
     .composition__photo--3 {
-      left: 35rem;
-      top: 2rem; }
+      left: 52%;
+      top: 4vh; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      outline: 1.5rem solid #55c57a; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
 
 .header {
   height: 95vh;
