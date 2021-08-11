@@ -5,9 +5,10 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
+    //in rgba(color, 0.8) the 0.8 defines the opacity of the colour;
     url(../img/hero.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: top; //if screen is resized, the top position stays the same
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;

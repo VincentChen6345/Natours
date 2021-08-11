@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 .container {
   display: flex;
@@ -19,7 +20,9 @@ body {
 
 .main {
   display: flex;
-  justify-content: center; }
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
 @keyframes moveInBottom {
   0% {
@@ -54,8 +57,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -121,8 +123,7 @@ body {
 
 .description-photo-container {
   display: flex;
-  flex-direction: row;
-  background-color: lightblue; }
+  flex-direction: row; }
 
 .section-about {
   margin-top: 11rem;
@@ -221,6 +222,9 @@ body {
       outline: 1.5rem solid #55c57a; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.feature-box {
+  font-size: 2rem; }
 
 .header {
   height: 95vh;
