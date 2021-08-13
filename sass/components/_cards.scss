@@ -1,12 +1,28 @@
 .card {
   //FUNCTIONALITY
   perspective: 150rem;
-  position: relative;
+
   height: 0rem; //collapse
+  width: 100%;
+
+  position: relative;
+
+  &__1 {
+    position: absolute;
+    left: 5%;
+  }
+  &__2 {
+    position: absolute;
+    left: 37.5%;
+  }
+  &__3 {
+    position: absolute;
+    left: 70%;
+  }
 
   &__side {
     height: 50rem;
-    width: 30rem;
+    width: 34rem;
     transition: all 0.8s ease;
     color: black;
     font-size: 3rem;
@@ -31,15 +47,30 @@
           $color-secondary-dark
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
+  //   &:hover &__side--front {
+  //     transform: rotateY(-180deg);
+  //   }
+  //   &:hover &__side--back {
+  //     transform: rotateY(0);
+  //   }
   //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
@@ -56,10 +87,21 @@
         url(../img/nat-5.jpg); //////////////GET FREE IMAGES OFF UNSPLASH.COM
     }
     &--2 {
-      background-image: url(../img/nat-5.jpg); //////////////GET FREE IMAGES OFF UNSPLASH.COM
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../img/nat-6.jpg); //////////////GET FREE IMAGES OFF UNSPLASH.COM
     }
     &--3 {
-      background-image: url(../img/nat-5.jpg); //////////////GET FREE IMAGES OFF UNSPLASH.COM
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../img/nat-7.jpg);
+      //////////////GET FREE IMAGES OFF UNSPLASH.COM
     }
   }
   &__heading {
@@ -85,6 +127,20 @@
         rgba($color-secondary-dark, 0.8)
       );
     }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)
+      );
+    }
   }
 
   &__details {
@@ -104,4 +160,46 @@
       }
     }
   }
+
+  //BACK SIDE STYLING
+  &__cta {
+  }
+  &__price-box {
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+  }
+  &__price-only {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 35%;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-top: 1.2rem;
+    margin-bottom: 20%;
+  }
+}
+///////////////////////////////////////
+/////////ROTATION EFFECTS
+.card__1:hover .card__side--front-1 {
+  transform: rotateY(-180deg);
+}
+.card__1:hover .card__side--back-1 {
+  transform: rotateY(0);
+}
+
+.card__2:hover .card__side--front-2 {
+  transform: rotateY(-180deg);
+}
+.card__2:hover .card__side--back-2 {
+  transform: rotateY(0);
+}
+
+.card__3:hover .card__side--front-3 {
+  transform: rotateY(-180deg);
+}
+.card__3:hover .card__side--back-3 {
+  transform: rotateY(0);
 }
