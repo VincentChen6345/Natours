@@ -51,6 +51,15 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    position: absolute;
+    top: 60rem;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
 }
 
 .btn-text {
