@@ -72,6 +72,8 @@
     border-bottom: 1.5px solid $color-primary;
     padding: 3px;
     transition: all 0.2s;
+    position: relative;
+    z-index: 5;
   }
   &:hover {
     background-color: $color-primary;
