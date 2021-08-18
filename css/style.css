@@ -15,8 +15,7 @@ body {
 .container {
   display: flex;
   background-color: #f7f7f7;
-  flex-direction: column;
-  height: 1000rem; }
+  flex-direction: column; }
 
 .main {
   display: flex;
@@ -574,3 +573,51 @@ body {
       transition: opacity 0.2s; }
   .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
     opacity: 1; }
+
+.footer {
+  margin-top: 22%;
+  font-size: 1.4rem; }
+  .footer-container {
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -2rem;
+    font-size: 1.3rem;
+    padding-bottom: 8.9%; }
+  .footer__logo-box {
+    padding: 12rem 10rem; }
+  .footer-logo {
+    width: 15rem;
+    height: auto; }
+  .footer__mini-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -3%; }
+  .footer__navigation {
+    color: inherit;
+    width: fit-content;
+    margin-right: 10%; }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border-top: 1px solid #999;
+    width: 100%;
+    padding-top: 2rem;
+    text-transform: uppercase; }
+  .footer__item:not(:last-child) {
+    margin-right: 2.5rem; }
+  .footer__text-box {
+    width: 33%;
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    margin-left: 10%; }
+  .footer__paragraph {
+    line-height: 1.8;
+    font-size: 1.4rem; }
+  .footer__link {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none; }
