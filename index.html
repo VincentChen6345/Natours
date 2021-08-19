@@ -16,6 +16,39 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp; </span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>popular tours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>stories </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>book now </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="container">
       <header class="header">
         <div class="header__logo-box">
@@ -382,7 +415,9 @@
             </div>
             <div class="footer__text-box">
               <p class="footer__paragraph">
-                Built by JONAS SCHMEDTMANN for his online course
+                Built by
+                <a href="#" class="footer__link">JONAS SCHMEDTMANN</a> for his
+                online course
                 <a href="#" class="footer__link">ADVANCED CSS AND SASS</a>.This
                 project has highly helped me practice flexbox on my own as Jonas
                 originally built this page with floats. I can't wait to see what
