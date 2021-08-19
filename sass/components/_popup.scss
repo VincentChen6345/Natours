@@ -1,0 +1,33 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.8);
+  z-index: 100;
+
+  &__content {
+    @include centerHandV;
+    width: 75%;
+    // height: 50rem;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    background-color: $color-white;
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__left {
+  }
+  &__right {
+    padding: 5rem;
+  }
+  &__img {
+    width: 100%;
+    display: block;
+  }
+  &__text {
+    font-size: $default-font-size;
+  }
+}
