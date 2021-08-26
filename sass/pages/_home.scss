@@ -1,11 +1,18 @@
 .description {
   width: 48%;
   //transform: translateX(-5rem);
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .description-photo-container {
   display: flex;
   flex-direction: row;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 .section-about {
   margin-top: 11rem;
@@ -32,6 +39,14 @@
   background-size: cover;
 
   clip-path: polygon(0 18%, 100% 0, 100% 85%, 0 100%);
+
+  @include respond(tab-port) {
+    margin-top: 40rem;
+    clip-path: polygon(0 18%, 100% 8%, 100% 85%, 0 95%);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 110rem;
+  }
 }
 
 .section-tours {
@@ -43,6 +58,10 @@
   padding: 15rem 0;
   margin-top: 45%;
   position: relative;
+
+  @include respond(tab-port) {
+    margin-top: 170rem;
+  }
 }
 
 .section-booking {

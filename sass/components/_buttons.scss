@@ -71,6 +71,9 @@
     &-discover {
       position: absolute;
       top: 60rem;
+      @include respond(tab-port) {
+        top: 173rem;
+      }
     }
   }
 }

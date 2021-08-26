@@ -13,6 +13,11 @@
   flex-direction: column;
   height: 34rem;
 
+  @include respond(tab-port) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
   &:hover {
     transform: translateY(-2rem);
     transform: scale(1.1);
