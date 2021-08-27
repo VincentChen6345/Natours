@@ -180,6 +180,9 @@ body {
 .section-about {
   margin-top: 11rem;
   width: 85%; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      margin-top: 6rem; } }
 
 .section-features {
   display: flex;
@@ -195,7 +198,6 @@ body {
   clip-path: polygon(0 18%, 100% 0, 100% 85%, 0 100%); }
   @media (max-width: 56.25em) {
     .section-features {
-      margin-top: 40rem;
       clip-path: polygon(0 18%, 100% 8%, 100% 85%, 0 95%);
       flex-wrap: wrap;
       justify-content: center;
@@ -211,6 +213,7 @@ body {
   position: relative; }
   @media (max-width: 56.25em) {
     .section-stories {
+      padding: 10rem 0;
       margin-top: 170rem; } }
 
 .section-booking {
@@ -324,22 +327,44 @@ body {
   @media (max-width: 56.25em) {
     .composition {
       width: 80%;
-      margin-top: 8rem;
-      align-self: center; } }
+      margin-top: 15rem;
+      align-self: center;
+      flex-direction: row;
+      justify-content: space-between; } }
   .composition__photo {
     width: 50%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        position: relative;
+        width: 30%; } }
     .composition__photo--1 {
       top: -5vh;
       left: 10%; }
+      @media (max-width: 56.25em) {
+        .composition__photo--1 {
+          top: 1rem;
+          left: 0;
+          transform: scale(1.1); } }
     .composition__photo--2 {
       top: 15vh;
       left: 32%; }
+      @media (max-width: 56.25em) {
+        .composition__photo--2 {
+          top: -2rem;
+          left: 0;
+          transform: scale(1.3);
+          z-index: 5; } }
     .composition__photo--3 {
       left: 52%;
       top: 4vh; }
+      @media (max-width: 56.25em) {
+        .composition__photo--3 {
+          top: 0;
+          left: 0;
+          transform: scale(1.2); } }
     .composition__photo:hover {
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -366,7 +391,8 @@ body {
   @media (max-width: 56.25em) {
     .feature-box {
       margin-right: 1rem;
-      margin-left: 1rem; } }
+      margin-left: 1rem;
+      padding: 2rem; } }
   .feature-box:hover {
     transform: translateY(-2rem);
     transform: scale(1.1); }
@@ -375,7 +401,11 @@ body {
     display: inline-block;
     background: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
-    color: transparent; }
+    color: transparent;
+    margin-bottom: 0.5rem; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
 
 .story {
   width: 60%;

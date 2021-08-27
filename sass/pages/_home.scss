@@ -17,6 +17,10 @@
 .section-about {
   margin-top: 11rem;
   width: 85%;
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
 }
 
 .section-features {
@@ -41,7 +45,6 @@
   clip-path: polygon(0 18%, 100% 0, 100% 85%, 0 100%);
 
   @include respond(tab-port) {
-    margin-top: 40rem;
     clip-path: polygon(0 18%, 100% 8%, 100% 85%, 0 95%);
     flex-wrap: wrap;
     justify-content: center;
@@ -60,6 +63,7 @@
   position: relative;
 
   @include respond(tab-port) {
+    padding: 10rem 0;
     margin-top: 170rem;
   }
 }
