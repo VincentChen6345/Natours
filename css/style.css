@@ -206,6 +206,9 @@ body {
 .section-tours {
   padding: 10rem 0;
   width: 100%; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 0; } }
 
 .section-stories {
   padding: 15rem 0;
@@ -214,7 +217,7 @@ body {
   @media (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0;
-      margin-top: 170rem; } }
+      margin-top: 5rem; } }
 
 .section-booking {
   height: 50rem;
@@ -227,13 +230,24 @@ body {
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
-  height: 50rem;
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
     width: 51%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -294,7 +308,7 @@ body {
     top: 60rem; }
     @media (max-width: 56.25em) {
       .btn--green-discover {
-        top: 173rem; } }
+        top: 0; } }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -419,6 +433,14 @@ body {
   transform: skewX(-12deg); }
   .story:not(:last-child) {
     margin: 10rem auto; }
+  @media (max-width: 56.25em) {
+    .story {
+      padding: 4rem;
+      padding-left: 7rem;
+      width: 90%; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0deg); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -428,8 +450,14 @@ body {
     transform: translate(-3rem, -2rem) skewX(12deg);
     position: relative;
     overflow: hidden; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translate(-3rem, -1rem) skewX(0deg); } }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0deg); } }
   .story__image {
     height: 100%;
     transform: translateX(-3.5rem) scale(1.4);
@@ -485,36 +513,15 @@ body {
   height: 0rem;
   width: 100%;
   position: relative; }
-  @media (max-width: 56.25em) {
-    .card {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 100%; } }
   .card__1 {
     position: absolute;
     left: 5%; }
-    @media (max-width: 56.25em) {
-      .card__1 {
-        position: absolute;
-        left: 35%;
-        perspective: 150rem; } }
   .card__2 {
     position: absolute;
     left: 37.5%; }
-    @media (max-width: 56.25em) {
-      .card__2 {
-        left: 35%;
-        top: 58rem;
-        perspective: 150rem; } }
   .card__3 {
     position: absolute;
     left: 70%; }
-    @media (max-width: 56.25em) {
-      .card__3 {
-        top: 116rem;
-        left: 35%;
-        perspective: 150rem; } }
   .card__side {
     height: 50rem;
     width: 34rem;
@@ -528,9 +535,6 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
-      @media (max-width: 56.25em) {
-        .card__side--front {
-          position: absolute; } }
     .card__side--back {
       transform: rotateY(180deg);
       position: absolute;
@@ -599,21 +603,60 @@ body {
     font-weight: 100;
     margin-top: 1.2rem;
     margin-bottom: 20%; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .card__1 {
+        position: initial; }
+      .card__2 {
+        position: initial; }
+      .card__3 {
+        position: initial; }
+      .card__side {
+        border-radius: 3px; }
+        .card__side--back {
+          transform: rotateY(0deg);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          height: 30rem;
+          position: initial;
+          margin-bottom: 5rem;
+          margin-top: -4.4rem; }
+      .card__cta {
+        padding: 4rem; }
+      .card__price-only {
+        margin-bottom: 0rem;
+        margin-top: 5%; }
+      .card__price-value {
+        font-size: 6rem;
+        margin-bottom: 0;
+        margin-top: 0; } }
 
 .card__1:hover .card__side--front-1 {
   transform: rotateY(-180deg); }
+  @media (max-width: 56.25em) {
+    .card__1:hover .card__side--front-1 {
+      transform: rotateY(0deg); } }
 
 .card__1:hover .card__side--back-1 {
   transform: rotateY(0); }
 
 .card__2:hover .card__side--front-2 {
   transform: rotateY(-180deg); }
+  @media (max-width: 56.25em) {
+    .card__2:hover .card__side--front-2 {
+      transform: rotateY(0deg); } }
 
 .card__2:hover .card__side--back-2 {
   transform: rotateY(0); }
 
 .card__3:hover .card__side--front-3 {
   transform: rotateY(-180deg); }
+  @media (max-width: 56.25em) {
+    .card__3:hover .card__side--front-3 {
+      transform: rotateY(0deg); } }
 
 .card__3:hover .card__side--back-3 {
   transform: rotateY(0); }
@@ -671,6 +714,10 @@ body {
     width: 49%;
     display: inline-block;
     transform: translateX(2.5rem); }
+    @media (max-width: 37.5em) {
+      .form__radio-group {
+        width: 100%;
+        margin-bottom: 2rem; } }
   .form__radio-input {
     display: none; }
   .form__radio-label {
@@ -709,6 +756,9 @@ body {
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
+  @media (max-width: 75em) {
+    .footer {
+      margin-top: 40%; } }
   .footer-container {
     background-color: #333333;
     color: #fff;
