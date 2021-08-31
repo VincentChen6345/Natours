@@ -29,6 +29,7 @@
     font-size: 3rem;
     position: relative;
 
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 5px;
     overflow: hidden;

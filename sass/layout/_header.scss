@@ -6,13 +6,28 @@
       rgba($color-primary-dark, 0.8)
     ),
     //in rgba(color, 0.8) the 0.8 defines the opacity of the colour;
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top; //if screen is resized, the top position stays the same
   width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      //in rgba(color, 0.8) the 0.8 defines the opacity of the colour;
+      url(../img/hero.jpg);
+  }
+
   position: relative;
   @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
