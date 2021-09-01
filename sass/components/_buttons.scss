@@ -71,7 +71,8 @@
     &-discover {
       position: absolute;
       top: 60rem;
-      @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         top: 0;
       }
     }

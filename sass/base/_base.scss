@@ -43,4 +43,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: auto;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }

@@ -65,14 +65,13 @@
   margin-top: 45%;
   position: relative;
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     padding: 10rem 0;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 
 .section-booking {
-  height: 50rem;
   width: 100%;
   &__container {
     background-image: linear-gradient(

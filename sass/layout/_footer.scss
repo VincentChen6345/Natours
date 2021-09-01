@@ -1,14 +1,5 @@
 .footer {
-  margin-top: 22%;
   font-size: 1.4rem;
-
-  @include respond(tab-port) {
-    padding: 8rem 0;
-  }
-
-  @include respond(tab-land) {
-    margin-top: 40%;
-  }
 
   &-container {
     background-color: $color-grey-dark-3;
